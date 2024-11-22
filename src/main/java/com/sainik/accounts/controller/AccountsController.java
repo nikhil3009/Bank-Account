@@ -4,6 +4,7 @@ import com.sainik.accounts.constants.AccountsConstants;
 import com.sainik.accounts.dto.CustomerDto;
 import com.sainik.accounts.dto.ResponseDto;
 import com.sainik.accounts.service.IAccountsService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
@@ -12,7 +13,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
+@Tag(
+        name="CRUD REST API for Accounts in Bank Application",
+        description ="Create, Delete,Update and fetch accounts from the Bank Application"
+)
 @RestController
 @RequestMapping(path="/api",produces = MediaType.APPLICATION_JSON_VALUE)
 @AllArgsConstructor
