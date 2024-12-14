@@ -8,20 +8,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @OpenAPIDefinition(
-		info=@Info(
-			title="Accounts Microservice REST API Documentation",
-			description="Bank application account service",
-				version="v1",
-				contact = @Contact(
-						name="Sainikhilreddy",
-						email="Sainikhil3009@gmail.com"
-				)
-		)
+        info=@Info(
+                title="Accounts Microservice REST API Documentation",
+                description="Bank application account service",
+                version="v1",
+                contact = @Contact(
+                        name="Sainikhilreddy",
+                        email="Sainikhil3009@gmail.com"
+                )
+        )
 )
 public class AccountsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AccountsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AccountsApplication.class, args);
+    }
 
 }
